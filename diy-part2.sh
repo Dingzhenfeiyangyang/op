@@ -18,3 +18,9 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+git clone https://github.com/openwrt-dev/po2lmo.git package/po21mo
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
+git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/mentohust
+git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
+git clone https://github.com/lucikap/luci-app-nettask.git package/luci-app-nettask
