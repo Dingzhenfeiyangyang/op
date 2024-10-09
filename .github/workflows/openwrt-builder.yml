@@ -58,6 +58,9 @@ jobs:
         git clone $REPO_URL 
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
+    - name: git tag
+      run: cd openwrt && git checkout git checkout v23.05.5
+      
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
